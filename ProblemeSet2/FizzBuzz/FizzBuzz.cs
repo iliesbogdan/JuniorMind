@@ -8,8 +8,8 @@ namespace FizzBuzz
     {
         [TestMethod]
         public void TestBuzzFizz() {
-            string test = getFizzBuzz(15);
-            Assert.AreEqual("FIZZBUZZ", test);
+            string test = getFizzBuzz(10);
+            Assert.AreEqual("BUZZ", test);
         }
 
         string getFizzBuzz(int a)
