@@ -7,21 +7,22 @@ namespace Watermelon
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestForWatermelonParity()
         {
-            int watermelon = verifyParity(10);
-            Assert.AreEqual(1, watermelon);
+            string watermelon = verifyParity(10);
+            Assert.AreEqual("DA", watermelon);
         }
-        int verifyParity(int watermelonWeight)
+        string verifyParity(int watermelonWeight)
         {
-            
+            string d = "DA";
+            string n = "NU";
             if (watermelonWeight % 2 == 0)
             {
-                return 1;
+                return d;
             }
             else
             {
-                return 0;
+                return n;
             }
         }
     }
