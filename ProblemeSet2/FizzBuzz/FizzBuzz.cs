@@ -20,19 +20,26 @@ namespace FizzBuzz
         {
             Assert.AreEqual("FIZZBUZZ", getFizzBuzz(15));
         }
+        [TestMethod]
+        public void TestNoRetrieve()
+        {
+            Assert.AreEqual("17", getFizzBuzz(17));
+        }
 
-        string getFizzBuzz(int a)
+
+        string getFizzBuzz(int theNumber)
         {
 
-            if (a % 5 == 0 && a % 3 == 0)
+            if (theNumber % 5 == 0 && theNumber % 3 == 0)
                 return "FIZZBUZZ";
 
-            else if (a % 5 == 0)
+            if (theNumber % 5 == 0)
                 return "BUZZ";
 
-            else if (a % 3 == 0)
+            if (theNumber % 3 == 0)
                 return "FIZZ";
-            else return a.ToString();
+
+           return theNumber.ToString();
         }
     }
         }
