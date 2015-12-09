@@ -15,6 +15,11 @@ namespace FizzBuzz
         {
             Assert.AreEqual("FIZZ", getFizzBuzz(33));
         }
+        [TestMethod]
+        public void TestFizzBuzz()
+        {
+            Assert.AreEqual("FIZZBUZZ", getFizzBuzz(15));
+        }
 
         string getFizzBuzz(int a)
         {
