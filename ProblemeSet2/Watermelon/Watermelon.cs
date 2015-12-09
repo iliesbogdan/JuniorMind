@@ -9,6 +9,20 @@ namespace Watermelon
         [TestMethod]
         public void TestMethod1()
         {
+            int watermelon = verifyParity(10);
+            Assert.AreEqual(1, watermelon);
+        }
+        int verifyParity(int watermelonWeight)
+        {
+            
+            if (watermelonWeight % 2 == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }
