@@ -9,21 +9,29 @@ namespace Watermelon
         [TestMethod]
         public void TestForWatermelonParity()
         {
+            string watermelon = verifyParity(2);
+            Assert.AreEqual("NU", watermelon);
+        }
+        [TestMethod]
+        public void TestForWatermelonParitySecond()
+        {
             string watermelon = verifyParity(10);
             Assert.AreEqual("DA", watermelon);
         }
+        [TestMethod]
+        public void TestForWatermelonParityThird()
+        {
+            string watermelon = verifyParity(333);
+            Assert.AreEqual("NU", watermelon);
+        }
+
         string verifyParity(int watermelonWeight)
         {
-            string d = "DA";
-            string n = "NU";
-            if (watermelonWeight % 2 == 0)
-            {
-                return d;
-            }
-            else
-            {
-                return n;
-            }
+            if (watermelonWeight > 2)
+                if (watermelonWeight % 2 == 0)
+                    return "DA";
+            
+            return "NU";           
         }
     }
 }
