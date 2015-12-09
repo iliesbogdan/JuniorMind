@@ -8,7 +8,7 @@ namespace FizzBuzz
     {
         [TestMethod]
         public void TestBuzzFizz() {
-            string test = getFizzBuzz(10);
+            string test = getFizzBuzz(17);
             Assert.AreEqual("BUZZ", test);
         }
 
@@ -28,7 +28,7 @@ namespace FizzBuzz
 
             else if (a % 3 == 0)
                 return f;
-            else return "none";
+            else return a.ToString();
 
         }
     }
