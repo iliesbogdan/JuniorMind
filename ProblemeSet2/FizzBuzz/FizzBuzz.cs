@@ -10,6 +10,11 @@ namespace FizzBuzz
         public void TestBuzz() {
             Assert.AreEqual("BUZZ", getFizzBuzz(5));
         }
+        [TestMethod]
+        public void TestFizz()
+        {
+            Assert.AreEqual("FIZZ", getFizzBuzz(33));
+        }
 
         string getFizzBuzz(int a)
         {
