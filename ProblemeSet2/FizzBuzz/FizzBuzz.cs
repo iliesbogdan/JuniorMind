@@ -8,8 +8,10 @@ namespace FizzBuzz
     {
         [TestMethod]
         public void TestBuzzFizz() {
-            
+            string test = getFizzBuzz(15);
+            Assert.AreEqual("FIZZBUZZ", test);
         }
+
         string getFizzBuzz(int a)
         {
 
@@ -31,5 +33,5 @@ namespace FizzBuzz
         }
     }
         }
-    }
+    
 
