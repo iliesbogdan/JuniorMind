@@ -7,29 +7,22 @@ namespace FizzBuzz
     public class FizzBuzz
     {
         [TestMethod]
-        public void TestBuzzFizz() {
-            string test = getFizzBuzz(17);
-            Assert.AreEqual("BUZZ", test);
+        public void TestBuzz() {
+            Assert.AreEqual("BUZZ", getFizzBuzz(5));
         }
 
         string getFizzBuzz(int a)
         {
 
-            string f = "FIZZ";
-            string b = "BUZZ";
-            string fb = "FIZZBUZZ";
-
             if (a % 5 == 0 && a % 3 == 0)
-                return fb;
+                return "FIZZBUZZ";
 
-            else
-                if (a % 5 == 0)
-                return b;
+            else if (a % 5 == 0)
+                return "BUZZ";
 
             else if (a % 3 == 0)
-                return f;
+                return "FIZZ";
             else return a.ToString();
-
         }
     }
         }
